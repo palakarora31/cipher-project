@@ -1,0 +1,19 @@
+class test :
+    @staticmethod
+    def table( n) :
+        i = 2
+        while (i <= n) :
+            j = 1
+            while (j <= 10) :
+                print(str(i) + " x " + str(j) + " = " + str(i * j))
+                j += 1
+            print()
+            i += 1
+    @staticmethod
+    def main( args) :
+    	n=int(input("Enter A Number To Generate Multiplication Tables Till Given Sentinel Value \n\n"))
+    	test.table(n)
+
+
+if __name__=="__main__":
+    test.main([])
